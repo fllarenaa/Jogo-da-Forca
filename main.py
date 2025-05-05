@@ -8,17 +8,17 @@ while questionRequest != "N":
     print(f"A palavra foi: {wordSelected}")
     break
 countWord = len(wordSelected)
-# insertWord = input("Digite uma letra:")
+insertWord = input("Digite uma letra:")
 n = 0
 tryCount = 0 
 
 while tryCount < countWord:
-    insertWord = input("Digite uma letra:")
+
     
     if insertWord == wordSelected[n]:
-        print("Acertou a primeira letra!")
-    tryCount += 1
-    print(f"O tryCont agora é {tryCount}")
+        # print("Acertou a primeira letra!")
+        tryCount += 1
+        print(f"O tryCont agora é {tryCount}")
     #  break
 else:
     print("Errou a primeira letra!")
