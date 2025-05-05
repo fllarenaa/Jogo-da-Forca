@@ -12,15 +12,17 @@ insertWord = input("Digite uma letra:")
 n = 0
 tryCount = 0 
 
-while tryCount < countWord:
+# while tryCount < countWord:
 
     
 if insertWord == wordSelected[n]:
     print("Acertou a primeira letra!")
     tryCount = tryCount + 1
     print(f"O tryCont agora é {tryCount}")
+    #  break
 else:
     print("Errou a primeira letra!")
+    
 
         
 questionRequest = input("Deseja jogar novamente? S ou N").upper()
