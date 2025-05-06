@@ -1,11 +1,11 @@
 import random
-
-words = ["abacaxi", "sapato", "laranja"]
+while questionRequest != "N":
+    words = ["abacaxi", "sapato", "laranja"]
 questionRequest = "S"
 wordSelected = random.choice(words)
 print(f"A palavra foi: {wordSelected}")
 # insertWord = input("Digite uma letra:")
-# while questionRequest != "N":
+# 
     
     # break
 countWord = len(wordSelected)
@@ -26,5 +26,5 @@ else:
     
 
         
-# questionRequest = input("Deseja jogar novamente? S ou N").upper()
+questionRequest = input("Deseja jogar novamente? S ou N").upper()
 print("Fim do jogo.")
