@@ -22,8 +22,10 @@ while tryCount < countWord:
         n += 1
         print(f"O tryCont agora é {tryCount}")
         # break
-else:
-    print("Errou a primeira letra!")
+    else:
+        print("Errou a letra!")
+
+        # Fazer lógica para quando errar
     
 
         
