@@ -11,7 +11,9 @@ print(f"A palavra foi: {wordSelected}")
 countWord = len(wordSelected)
 
 n = 0
-tryCount = 0 
+tryCount = 0
+errorCount = 0
+
 
 while tryCount < countWord:
     insertWord = input("Digite uma letra:")
@@ -24,6 +26,7 @@ while tryCount < countWord:
         # break
     else:
         print("Errou a letra!")
+        errorCount += 1
 
         # Fazer lógica para quando errar
     

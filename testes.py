@@ -44,4 +44,44 @@
 # else: 
 #         print("errou") 
 #         questionRequest = input("Deseja jogar novamente? S ou N: ").upper()
-
+valuenum = 10
+if valuenum == 10:
+    head1 = "_"
+    head2 = "\\"
+    head3 = "/"
+    head4 = "--"
+    body1 = "|"
+    body2 = "|"
+    body3 = "|"
+    body4 = "|"
+    arm = "/"
+    arm2 = '\\'
+    leg1 = "/"
+    leg2 = "\\"
+else:
+    head1 = ""
+    head2 = ""
+    head3 = ""
+    head4 = ""
+    body1 = ""
+    body2 = ""
+    body3 = ""
+    body4 = ""
+    arm = ""
+    arm2 = ''
+    leg1 = ""
+    leg2 = ""
+print(" ----------------|")
+print(" |               |")
+# print(f" |             {head} ")
+print(f" |              {head1}{head1}")
+print(f" |            {head3}    {head2}")
+print(f" |            {head2}    {head3}")
+print(f" |              {head4}")
+print(f" |             {arm}{body1}{arm2}")
+print(f" |            {arm} {body2} {arm2}")
+print(f" |              {body3}")
+print(f" |              {body4}")
+print(f" |             {leg1} {leg2}")
+print(f" |            {leg1}   {leg2}")
+print(f" |           {leg1}     {leg2}")
