@@ -45,6 +45,7 @@
 #         print("errou") 
 #         questionRequest = input("Deseja jogar novamente? S ou N: ").upper()
 valuenum = 10
+
 if valuenum == 10:
     head1 = "_"
     head2 = "\\"
