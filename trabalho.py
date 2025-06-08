@@ -1,55 +1,80 @@
+def escolher_categoria():
+    categorias = {
+        "1": ("Profissões", ["professor", "engenheiro", "padeiro", "cozinheiro", "segurança"]),
+        "2": ("Comidas", ["lasanha", "hamburguer", "sushi","pizza"]),
+        "3": ("Cores", ["vermelho", "azul", "amarelo","verde"]),
+        "4": ("Objetos", ["cadeira", "telefone", "garrafa","colher"]),
+         }
+
 import random
-
-
-
-# while questionRequest != "N":
-words = ["abacaxi", "sapato", "laranja"]
-words = random.choice(words)
-tentativas = 6
-letras_erradas=[]
-letras_certas=['_' for _ in words]
-
-print("🎮 Bem-vindo ao jogo da Forca")
-
-while tentativas > 0 and '_' in letras_certas:
-    print("\nPalavra:", ' '.join(letras_certas))
-
-n = 0
-tryCount = 0
-errorCount = 0
-head1 = ""
-head2 = ""
-head3 = ""
-head4 = ""
-body1 = ""
-body2 = ""
-body3 = ""
-body4 = ""
-arm = ""
-arm2 = ''
-leg1 = ""
-leg2 = ""
-
-
-while tryCount < questionRequest != "NS":
-    insertWord = input("Digite uma letra:")
-
-    print(" ----------------|")
-    print(" |               |")
-    # print(f" |             {head} ")
-    print(f" |              {head1}{head1}")
-    print(f" |            {head3}    {head2}")
-    print(f" |            {head2}    {head3}")
-    print(f" |              {head4}")
-    print(f" |             {arm}{body1}{arm2}")
-    print(f" |            {arm} {body2} {arm2}")
-    print(f" |              {body3}")
-    print(f" |              {body4}")
-    print(f" |             {leg1} {leg2}")
-    print(f" |            {leg1}   {leg2}")
-    print(f" |           {leg1}     {leg2}")
-
-# if tryCount < countWord: 
+def desenhar_forca(erros):
+    estagios = [
+        """
+           _______
+           |     |
+           |     
+           |    
+           |     
+           |    
+        ___|___
+        """,
+        """
+           _______
+           |     |
+           |     O
+           |    
+           |     
+           |    
+        ___|___
+        """,
+        """
+           _______
+           |     |
+           |     O
+           |     |
+           |     
+           |    
+        ___|___
+        """,
+        """
+           _______
+           |     |
+           |     O
+           |    /|
+           |     
+           |    
+        ___|___
+        """,
+        """
+           _______
+           |     |
+           |     O
+           |    /|\\
+           |     
+           |    
+        ___|___
+        """,
+        """
+           _______
+           |     |
+           |     O
+           |    /|\\
+           |    / 
+           |    
+        ___|___
+        """,
+        """
+           _______
+           |     |
+           |     O
+           |    /|\\
+           |    / \\
+           |    
+        ___|___
+        """
+    ]
+    print(estagios[erros])
+    
     if insertWord == words[n]:
         print("Acertou a letra!")
         tryCount += 1
